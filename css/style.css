@@ -270,7 +270,37 @@ section {
 /* Third Section------------------------------------------------------ */
 
 
+.testimonials-top {
+    height: 30%;
+    text-align: center;
+    line-height: 2rem;
+}
 
+
+
+/* testimonials cards---------*/
+.testimonials-bot {
+    height: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.testimonial-card {
+    background-color: green;
+    height: calc(100% / 3 - 40px);
+    margin: 20px 0;
+    display: flex;
+    align-items: center;
+}
+
+.testimonial-pic {
+    height: 70%;
+}
+
+.testimonial-pic > img {
+    height: 100%;
+}
 
 
 
