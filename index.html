@@ -4,6 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Roboto&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./css/responsive.css">
     <link rel="stylesheet" href="./css/style.css">
@@ -12,34 +15,36 @@
 </head>
 
 <body>
-    <div class="debug">
-        <!-- HEADER --------------------------------------------------->
+    <div">
+        <!-- HEADER -------------------------------------------------------------->
         <header id="header">
             <!-- NAV BAR -->
             <nav id="nav-bar">
-                <div class="nav-section container debug">
+                <div class="nav-section container">
                     <div class="logo">
-                        <img src="./img/logo.png" alt="">
+                        <a href="">
+                            <img src="./img/logo.png" alt="">
+                        </a>
                     </div>
 
                     <div class="nav-buttons">
-                        <div>
+                        <div class="nav-link">
                             <a href="">Planning</a> 
                         </div>
                         
-                        <div>
+                        <div class="nav-link">
                             <a href="">Testimonials</a>
                         </div>
                         
-                        <div>
+                        <div class="nav-link">
                             <a href="">Features</a>
                         </div>
 
-                        <div>
+                        <div class="nav-link">
                             <a href="">About Us</a>
                         </div>
                            
-                        <div>
+                        <div class="nav-btn">
                             <a href="">Get Started</a>
                         </div>   
                     </div>
@@ -48,58 +53,68 @@
         </header>
         
 
-        <!-- MAIN ----------------------------------------------------->
-        <main class="debug">
+        <!-- MAIN ---------------------------------------------------------------->
+        <main>
             <!-- FIRST SECTION -->
-            <section id="first-section" class="debug">
+            <section id="first-section">
                 <!-- DEMO CARDS -->
-                <div id="demo-cards" class="container debug">
+                <div id="demo-cards">
+                    <!-- ROW -->
                     <div class="demo-row">
-                        <div class="demo-col debug">
-                            <div class="demo-card debug">
-                                <div>
-                                    <h3>Get a demo Application</h3>
-
+                        <!-- COL -->
+                        <div class="demo-col">
+                            <!-- CARD -->
+                            <div class="demo-card" id="demo-card2-3">
+                                <div id="demo-left">
+                                    <h3 class="demo-title">
+                                        Get a demo Application
+                                    </h3>
+    
                                     <p>
                                         Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nulla rerum aspernatur est fugiat earum, quis sequi provident reiciendis praesentium explicabo!
                                     </p>
-
-                                    <div>
-                                        <a href="">
-                                            App Store
+    
+                                    <div id="demo-app-btn">
+                                        <a id="demo-app-link" href="">
+                                            <i class="fa-brands fa-apple"></i>
+                                            <span>App Store</span>
                                         </a>
                                     </div>
                                 </div>
-
-                                <div>
-                                    <img src="./img/phone.png" alt="">
-                                </div>
+    
+                                <div id="demo-right">
+                                    <img class="phone-logo" src="./img/phone.png" alt="">
+                                </div>   
                             </div>
                         </div>
 
-                        <div class="demo-col debug">
-                            <div class="demo-card debug">
-                                <div>
+                        <!-- COL -->
+                        <div class="demo-col">
+                            <!-- CARD -->
+                            <div class="demo-card">
+                                <div class="demo-logo">
                                     <i class="fa-solid fa-file-code"></i>
                                 </div>
-
-                                <h3>
+    
+                                <h3 class="demo-title">
                                     Clean Code
                                 </h3>
-
+    
                                 <p>
                                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis sapiente aliquam minus doloremque. Omnis fugiat, impedit alias vel ut laudantium!
                                 </p>
                             </div>
                         </div>
             
-                        <div class="demo-col debug">
-                            <div class="demo-card debug">
-                                <div>
+                        <!-- COL -->
+                        <div class="demo-col">
+                            <!-- CARD -->
+                            <div class="demo-card">
+                                <div class="demo-logo">
                                     <i class="fa-solid fa-compass-drafting"></i>
                                 </div>
 
-                                <h3>
+                                <h3 class="demo-title">
                                     Web Design
                                 </h3>
 
@@ -109,13 +124,16 @@
                             </div>
                         </div>
                         
-                        <div class="demo-col debug">
-                            <div class="demo-card debug">
-                                <div>
+                        <!-- COL -->
+                        <div class="demo-col">
+                            <!-- CARD -->
+                            <div class="demo-card">
+
+                                <div class="demo-logo">
                                     <i class="fa-solid fa-laptop-code"></i>
                                 </div>
                                 
-                                <h3>
+                                <h3 class="demo-title">
                                     Development
                                 </h3>
 
@@ -125,13 +143,15 @@
                             </div>
                         </div>
 
-                        <div class="demo-col debug">
-                            <div class="demo-card debug">
-                                <div>
+                        <!-- COL -->
+                        <div class="demo-col">
+                            <!-- CARD -->
+                            <div class="demo-card">
+                                <div class="demo-logo">
                                     <i class="fa-solid fa-bullhorn"></i>
                                 </div>
                                 
-                                <h3>
+                                <h3 class="demo-title">
                                     Branding
                                 </h3>
 
@@ -144,14 +164,125 @@
                 </div>
             </section>
 
-            <!-- SECOND SECTION --------------------------------------->
-            <section>
+            <!-- SECOND SECTION -->
+            <section id="second-section">
+                <div class="planning-container">
+                    <div class="planning-card1">
+                        <div class="planning-logo1">
+                            <img src="./img/planning1.png" alt="">
+                        </div>
 
+                        <div class="planning1-text">
+                            <h3>
+                                Strategic Planning
+                            </h3>
+
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione, recusandae possimus, iure officiis nam debitis dolorum explicabo corrupti voluptatem, repellat laborum accusantium. Consequuntur, harum dolorem.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="planning-card2">
+                        <div class="planning-logo2">
+                            <img src="./img/planning2.png" alt="">
+                        </div>
+
+                        <div class="planning2-text">
+                            <h3>
+                                App Development
+                            </h3>
+    
+                            <p>
+                                Develop an on-demand app for your delivery business to reach your targeted customers without any interruption
+                            </p>
+
+                            <div class="circle-arrow">
+                                <i class="fa-solid fa-arrow-down"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- THIRD SECTION -->
+            <section>
+                <div>
+                    <div></div>
+                    
+                    <div></div>
+
+                    <div></div>
+                </div>
+
+                <div>
+                    <div>
+                        <div>
+                            <img src="" alt="">
+                        </div>
+
+                        <div>
+                            <div>
+
+                            </div>
+
+                            <div>
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <div>
+                        <div>
+                            <img src="" alt="">
+                        </div>
+
+                        <div>
+                            <div>
+
+                            </div>
+
+                            <div>
+
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div>
+                        <div>
+                            <img src="" alt="">
+                        </div>
+
+                        <div>
+                            <div>
+
+                            </div>
+
+                            <div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- FOURTH SECTION -->
+            <section>
+                
+            </section>
+
+            <!-- FIFTH SECTION -->
+            <section>
+                
             </section>
         </main>
 
+        <!-- FOOTER -------------------------------------------------------------->
         <footer class="debug">
-
+            <!-- SIXTH SECTION -->
+            <section>
+                
+            </section>
         </footer>
     </div>
 </body>
