@@ -333,15 +333,31 @@ section {
 }
 
 /* Fifth Section-------------------------------------------------------- */
+.about-container {
+    height: 100%;
+    padding: 50px;
+    display: flex;
+}
 
+/* Left---------- */
+.about-left {
+    width: 80%;
+    padding-right: 50px;
+    line-height: 2rem;
+}
 
+/* right--------- */
 
+.about-right {
+    width: 20%;
+    line-height: 2rem;
+}
 
+.ceo-img > img {
+    width: 100%;
+}
 
-
-
-
-
+/* Sixth Section--------------------------------------------------------- */
 
 
 
