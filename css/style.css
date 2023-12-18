@@ -358,7 +358,26 @@ section {
 }
 
 /* Sixth Section--------------------------------------------------------- */
+#sixth-section {
+    background-color: #0084fd;
+    height: 75vh;
+}
+
+.started-container {
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    align-items: center;
+}
 
 
-
-
+/* FOOTER ---------------------------------------------------------------- */
+footer {
+    height: 25vh;
+    background-color: #333333;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    align-items: center;
+}
