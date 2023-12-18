@@ -268,19 +268,15 @@ section {
 }
 
 /* Third Section------------------------------------------------------ */
-
-
 .testimonials-top {
-    height: 30%;
+    height: 25%;
     text-align: center;
     line-height: 2rem;
 }
 
-
-
-/* testimonials cards---------*/
+/* testimonials cards------*/
 .testimonials-bot {
-    height: 70%;
+    height: 75%;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -302,12 +298,41 @@ section {
     height: 100%;
 }
 
+/* Fourth Section -------------------------------------------------------- */
+#fourth-section {
+    background-color: #9593e6;
+}
 
+.benefit-container {
+    height: 100%;
+}
 
+.benefit-title {
+    height: 15%;
+    text-align: center;
+    padding: 40px 0;
+}
+/* Benefit Cards -----------------*/
+.benefit-row {
+    width: 100%;
+    height: 85%;
+    display: flex;
+    flex-wrap: wrap;
+}
 
+.benefit-col {
+    width: calc(100% / 3);
+    padding: 10px;
+}
 
+.benefit-card {
+    border-radius: 25px;
+    padding: 20px;
+    background-color: white;
+    
+}
 
-
+/* Fifth Section-------------------------------------------------------- */
 
 
 
